@@ -7,6 +7,7 @@
 [![Package License](https://img.shields.io/npm/l/fifadate.svg)](https://www.npmjs.com/fifadate)
 [![NPM Downloads](https://img.shields.io/npm/dm/fifadate.svg)](https://www.npmjs.com/fifadate)
 [![Build & Publish](https://github.com/celtian/fifadate/workflows/Build%20&%20Publish/badge.svg)](https://github.com/celtian/fifadate/actions)
+[![codecov](https://codecov.io/gh/Celtian/fifatables/branch/master/graph/badge.svg?token=1IRUKIKM0D)](https://codecov.io/gh/celtian/fifadate/)
 [![stars](https://badgen.net/github/stars/celtian/fifadate)](https://github.com/celtian/fifadate/)
 [![forks](https://badgen.net/github/forks/celtian/fifadate)](https://github.com/celtian/fifadate/)
 [![HitCount](http://hits.dwyl.com/celtian/fifadate.svg)](http://hits.dwyl.com/celtian/fifadate)
