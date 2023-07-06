@@ -32,7 +32,14 @@ yarn add fifadate
 _Type this into your ts file._
 
 ```typescript
-import 'fifadate';
+import 'fifadate'; // for es5
+
+// or for es6
+import { registerFifaDatePrototype } from 'fifadate';
+
+registerFifaDatePrototype();
+
+// usage
 
 console.log(new Date('1970-01-01').toFifaDate()); // 141428
 console.log(new Date('1970-01-01').addYear(1));
