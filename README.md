@@ -7,6 +7,7 @@
 [![Package License](https://img.shields.io/npm/l/fifadate.svg)](https://www.npmjs.com/fifadate)
 [![NPM Downloads](https://img.shields.io/npm/dm/fifadate.svg)](https://www.npmjs.com/fifadate)
 [![Build & Publish](https://github.com/celtian/fifadate/workflows/Build%20&%20Publish/badge.svg)](https://github.com/celtian/fifadate/actions)
+[![codecov](https://codecov.io/gh/Celtian/fifatables/branch/master/graph/badge.svg?token=1IRUKIKM0D)](https://codecov.io/gh/celtian/fifadate/)
 [![stars](https://badgen.net/github/stars/celtian/fifadate)](https://github.com/celtian/fifadate/)
 [![forks](https://badgen.net/github/forks/celtian/fifadate)](https://github.com/celtian/fifadate/)
 [![HitCount](http://hits.dwyl.com/celtian/fifadate.svg)](http://hits.dwyl.com/celtian/fifadate)
@@ -32,7 +33,14 @@ yarn add fifadate
 _Type this into your ts file._
 
 ```typescript
-import 'fifadate';
+import 'fifadate'; // for es5
+
+// or for es6
+import { registerFifaDatePrototype } from 'fifadate';
+
+registerFifaDatePrototype();
+
+// usage
 
 console.log(new Date('1970-01-01').toFifaDate()); // 141428
 console.log(new Date('1970-01-01').addYear(1));
