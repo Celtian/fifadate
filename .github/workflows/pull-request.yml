@@ -8,10 +8,10 @@ jobs:
 
     steps:
       - name: 🗜️ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 🗜️ Setup node version
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           registry-url: 'https://registry.npmjs.org'
@@ -43,7 +43,7 @@ jobs:
           message: ${{ steps.coverage.outputs.report }}
 
       - name: ⬆️ Upload coverage reports
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
           fail_ci_if_error: true
