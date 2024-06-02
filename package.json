@@ -1,6 +1,6 @@
 {
   "name": "fifadate",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Utils for Fifa Soccer Game dates",
   "scripts": {
     "start": "rimraf dist && tsc-watch --build tsconfig.es5.json --onSuccess 'yarn postbuild'",
