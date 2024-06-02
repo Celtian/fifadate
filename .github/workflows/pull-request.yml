@@ -13,7 +13,7 @@ jobs:
       - name: 🗜️ Setup node version
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: 22
           registry-url: 'https://registry.npmjs.org'
 
       - name: 🛠️ Install
@@ -23,7 +23,24 @@ jobs:
         run: yarn build
 
       - name: 🧪 Run tests
-        run: yarn test --collectCoverage --ci
+        run: npx jest --ci --json --coverage --testLocationInResults --outputFile=coverage/report.json
+
+      - name: 🧪 Create coverage report markdown
+        uses: ArtiomTr/jest-coverage-report-action@v2
+        id: coverage
+        with:
+          prnumber: ${{ steps.findPr.outputs.number }}
+          coverage-file: coverage/report.json
+          package-manager: yarn
+          custom-title: 🧪 Unit tests
+          threshold: 80
+          skip-step: all
+          output: report-markdown
+
+      - name: 💬 Create coverage report comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: ${{ steps.coverage.outputs.report }}
 
       - name: ⬆️ Upload coverage reports
         uses: codecov/codecov-action@v3

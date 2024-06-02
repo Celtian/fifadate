@@ -14,7 +14,7 @@
 
 > Utils for Fifa Soccer Game dates
 
-## Install
+## 🛠️ Install
 
 _Nodejs 12 or higher need to be installed first_
 
@@ -28,7 +28,7 @@ or
 yarn add fifadate
 ```
 
-## Quick start
+## 🚀 Quick start
 
 _Type this into your ts file._
 
@@ -49,9 +49,9 @@ console.log(new Date('1970-01-01T03:00:00.000Z').normalize());
 console.log(Date.fromFifaDate(141428)); // 1970-01-01
 ```
 
-## License
+## 🪪 License
 
-Copyright &copy; 2023 [Dominik Hladik](https://github.com/Celtian)
+Copyright &copy; 2023 - 2024 [Dominik Hladik](https://github.com/Celtian)
 
 All contents are licensed under the [MIT license].
 
