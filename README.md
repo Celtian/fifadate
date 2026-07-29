@@ -25,7 +25,7 @@ npm install fifadate
 or
 
 ```terminal
-yarn add fifadate
+bun add fifadate
 ```
 
 ## 🚀 Quick start
