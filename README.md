@@ -51,7 +51,7 @@ console.log(Date.fromFifaDate(141428)); // 1970-01-01
 
 ## 🪪 License
 
-Copyright &copy; 2023 - 2025 [Dominik Hladik](https://github.com/Celtian)
+Copyright &copy; 2023 - 2026 [Dominik Hladik](https://github.com/Celtian)
 
 All contents are licensed under the [MIT license].
 
